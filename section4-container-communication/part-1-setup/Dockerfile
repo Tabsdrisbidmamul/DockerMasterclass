@@ -68,6 +68,8 @@ CMD ["node", "app.js"]
 # Both containers are in the same group, docker enables croos-communication between containers
 # Because of this, we don't need to publish any ports for the mongodb container - because Docker can freely connect containers with one another, you only need to publish ports if you are trying to gain access from host machine/ external to container
 
+# IP transformation happen on ingoing and outgoing requests, it does not change the source code!
+
 #-------------------------------
 #| ======fav-net network=====|  |
 #| |                         |  |
