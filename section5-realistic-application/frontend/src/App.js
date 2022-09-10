@@ -8,7 +8,7 @@ function App() {
   const [loadedGoals, setLoadedGoals] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  const domain = 'goals:3000';
+  const domain = 'localhost';
 
   useEffect(function () {
     async function fetchData() {
